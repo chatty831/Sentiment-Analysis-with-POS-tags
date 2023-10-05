@@ -35,7 +35,7 @@ test_joined_movie_reviews,test_reviews = zip(*[(movie_review[0],movie_review[1])
 test_joined_movie_reviews = [' '.join(tokens) for tokens in test_joined_movie_reviews]
 
 #initializing the vector
-vectorizer = TfidfVectorizer(max_features=5000)
+vectorizer = TfidfVectorizer(max_features=50000)
 X_tfidf = vectorizer.fit_transform(train_joined_sents)
 
 #training the classifier with training data
