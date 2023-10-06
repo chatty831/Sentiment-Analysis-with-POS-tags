@@ -1,3 +1,2 @@
-brown_sentences = brown.tagged_sents(tagset='universal')
-# conll2000_sentences = conll2000.tagged_sents(tagset='universal')
-# indian_sentences = indian.tagged_sents(tagset='universal')
+# Calculating all the probabilities using the self defined function in another file
+tags, start_prob, transition_prob, emission_prob = prob_calc(train_sents)
